@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "217148348730",
+    "project_id": "reader-c1ec5",
+    "storage_bucket": "reader-c1ec5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217148348730:android:9c1e0e1de87eb7868b1803",
+        "android_client_info": {
+          "package_name": "com.example.texttospeech"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-r2GuRFiZ7r5aeP9xPjXlws1jOLg7V1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

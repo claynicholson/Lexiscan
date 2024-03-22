@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black1"
+    tools:context=".CameraActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="360dp"
+        android:layout_height="72dp"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Choose a Language"
+        android:textColorHint="#FFFFFF"
+        app:boxStrokeColor="#FAFAFA"
+        app:helperTextTextColor="#FDFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/capturePhoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:passwordToggleTint="#FFFFFF"
+        app:placeholderTextColor="#FFFFFF"
+        app:prefixTextColor="#FFFBFB"
+        app:suffixTextColor="#FFFEFE">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+
+            android:layout_height="46dp"
+            android:popupBackground="#FFFFFF"
+            app:dropDownBackgroundTint="#FFFFFF" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/capturedImage"
+        android:layout_width="202dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/camera" />
+
+    <Button
+        android:id="@+id/capturePhoto"
+        android:layout_width="237dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="16dp"
+        android:text="Take Photo"
+        app:backgroundTint="@color/green1"
+        app:layout_constraintBottom_toTopOf="@+id/read"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/read"
+        android:layout_width="237dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="80dp"
+        android:text="Read"
+        app:backgroundTint="@color/green1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="320dp"
+        android:layout_height="143dp"
+        android:text="Text will appear here
+"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/capturePhoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capturedImage"
+        app:layout_constraintVertical_bias="0.289" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
