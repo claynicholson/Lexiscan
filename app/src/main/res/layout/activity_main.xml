@@ -5,43 +5,63 @@
     android:id="@+id/size"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black1"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView3"
+        android:layout_width="425dp"
+        android:layout_height="319dp"
+        android:background="#295C2C"
+        app:layout_constraintBottom_toTopOf="@+id/takePhoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="143dp"
         android:layout_height="144dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="96dp"
         android:src="@drawable/camera"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/takePhoto"
-        app:backgroundTint="@color/green1"
         android:layout_width="318dp"
         android:layout_height="137dp"
+        android:elevation="100dp"
+        android:fontFamily="sans-serif-medium"
+        android:padding="10dp"
+        android:shadowColor="#00000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="15"
         android:text="Start"
         android:textColor="@color/white"
-        android:textSize="19dp"
-        app:cornerRadius="50dp"
+        android:textSize="34sp"
+        app:backgroundTint="@color/green1"
+        app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.235" />
+        app:layout_constraintVertical_bias="0.278" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="336dp"
         android:text="Made by Clay Nicholson"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/takePhoto" />
 
