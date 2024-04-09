@@ -55,6 +55,7 @@ public class CameraActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
 
@@ -199,6 +200,7 @@ public class CameraActivity extends AppCompatActivity {
                         }
 
                         outputText.setText(text.getText());
+
                         readText(text.getText());
                     }
                 }
